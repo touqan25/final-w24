@@ -1,0 +1,13 @@
+/* Mobile first design */
+
+
+/* responsive design for tablet viewport */
+@media screen and (min-width: 768px) {
+    /* fill */
+}
+
+
+/* responsive design for desktop viewport */
+@media screen and (min-width: 1024px) {
+    /* fill */
+}
