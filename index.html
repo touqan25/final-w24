@@ -5,28 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
     <title>Taste of Home</title>
 </head>
 <body>
     <a class="skip-to-main" href = "#main">Skip to Main Content</a>
     <header>
+        <p>A TASTE OF HOME</p>
+        <p class="subtitle">preserving our culinary heritage</p>
         <nav>
-            <ul>
-                <<li><a href="index.html">Home</a></li>
-                <li><a href="paliSavory.html">Palestinian Food</a></li>
-                <li><a href="paliSweet.html">Palestinian Desserts</a></li>
-                <li><a href="filoSavory.html">Filipino Food</a></li>
-                <li><a href="filoSweet.html">Filipino Desserts</a></li>
+            <ul class="nav-container">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="paliSavory.html">Palestinian Food</a></li>
+                <li class="nav-item"><a href="paliSweet.html">Palestinian Desserts</a></li>
+                <li class="nav-item"><a href="filoSavory.html">Filipino Food</a></li>
+                <li class="nav-item"><a href="filoSweet.html">Filipino Desserts</a></li>
             </ul>
-            <h1></h1>
+            <h1 id="feature-card">
+                <div class="tape-section"></div>
+                    <span class="paper-top">Featured Recipes</span>
+                <div class="tape-section"></div>
+            </h1>
         </nav>
     </header>
-    <main>
+    <main id="main">
 
         <!-- Main 4x4 grid on home page, showing one savory and one sweet dish from each country. Links to recipe for food depicted -->
+        <div class="latest-recipes-container">
+            <article class="paliSavory">
+                <a href="paliSavoryRecipe.html" aria-label="View Musakhan Recipe">
+                    <div class="article-image">
+                        <img src="images/musakhan.jpg" alt="Three servings of musakhan garnished with lemon wedges, paired with a bowl of sumac and roasted pine nuts on a white table.">
+                    </div>
+                    <div class="article-title">
+
+                        <h2>
+                            <span class="paper">
+                                <div class="top-tape"></div>
+                                Musakhan
+                            </span>
+                        </h2>
+                    </div>
+                </a>
+            </article>
+            <article class="paliSweet">
+                <a href="PaliSweetRecipe.html" aria-label="View Knafeh Nabulsiyeh Recipe">
+                    <div class="article-image">
+                        <img src="images/knafeh.jpg" alt="A circular piece of knafeh nabulsiyeh topped with pistachio crumbles and dried rose petals, served on a white plate.">
+                    </div>
+                    <div class="article-title">
+                        <h2>
+                            <div class="top-tape" id="tape2"></div>
+                            <span class="paper-1">Knafeh Nabulsiyeh</span>
+                        </h2>
+                    </div>
+                </a>
+            </article>
+            <article class="filoSavory">
+                <a href="filoSavoryRecipe.html" aria-label="View Chicken Tinola Recipe">
+                    <div class="article-image">
+                        <img src="images/Tinola.webp" alt="Chicken Tinola">
+                    </div>
+                    <div class="article-title">
+                        <h2>
+                            <div class="top-tape" id="tape3"></div>
+                            <span class="paper-2">Chicken Tinola</span>
+                        </h2>
+                    </div>
+                </a>
+            </article>
+            <article class="filoSweet">
+                <a href="filoSweetRecipe.html" aria-label="View Taho Recipe">
+                    <div class="article-image">
+                        <img src="images/taho.jpg" alt="Taho">
+                    </div>
+                    <div class="article-title">
+                        <h2>
+                            <div class="top-tape" id="tape4"></div>
+                            <span class="paper">Taho</span>
+                        </h2>
+                    </div>
+                </a>
+            </article>
+        </div>
+
 
         <!-- Row of picture links to each individual page -->
+        <div class="nav-images">
+            <a href="paliSavory.html">
+                <span class="category-image">
+                    <img src="images/kousa.jpg" alt="Three pieces of kousa mahshi sitting in a red tomato-base broth served on a white plate on a marble counter">
+                    <span class="category-name">
+                    Palestinian Food
+                    </span>
+                </span>
+            </a>
+
+            <a href="paliSweet.html">
+                <span class="category-image">
+                    <img src="images/harisa.jpg" alt="A circular baking dish of harisa cut in an intricate diamond pieces, topped with almond silvers and pistachio.">
+                    <span class="category-name">
+                    Palestinian Desserts
+                    </span>
+                </span>
+            </a>
+
+            <a href="filoSavory.html">
+                <span class="category-image">
+                    <img src="images/Tinola.webp" alt="Chicken Tinola">
+                    <span class="category-name">
+                    Filipino Food
+                    </span>
+                </span>
+            </a>
+
+            <a href="filoSweet.html">
+                <span class="category-image">
+                    <img src="images/taho.jpg" alt="Taho">
+                    <span class="category-name">
+                    Filipino Desserts
+                    </span>
+                </span>
+            </a>
+        </div>
 
 
     </main>
