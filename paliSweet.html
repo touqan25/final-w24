@@ -12,87 +12,117 @@
     <title>ToH; Palestinian Desserts</title>
 </head>
 <body>
+    <div id="accessibleButton" tabindex="0">Make Font Accessible</div>
     <a class="skip-to-main" href = "#main">Skip to Main Content</a>
     <header>
+        <p>A TASTE OF HOME</p>
+        <p class="subtitle">preserving our culinary heritage</p>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="paliSavory.html">Palestinian Food</a></li>
-                <li><a href="paliSweet.html">Palestinian Desserts</a></li>
-                <li><a href="filoSavory.html">Filipino Food</a></li>
-                <li><a href="filoSweet.html">Filipino Desserts</a></li>
+            <ul class="nav-container">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="paliSavory.html">Palestinian Food</a></li>
+                <li class="nav-item"><a href="paliSweet.html">Palestinian Desserts</a></li>
+                <li class="nav-item"><a href="filoSavory.html">Filipino Food</a></li>
+                <li class="nav-item"><a href="filoSweet.html">Filipino Desserts</a></li>
             </ul>
-            <h1>Palestinian Desserts and Sweets</h1>
+            <h1 id="feature-card">
+                <div class="tape-section"></div>
+                    <span class="paper-top">Palestinian Desserts</span>
+                <div class="tape-section"></div>
+            </h1>
         </nav>
     </header>
-    <main>
+    <main class="grid" id="main">
 
-        <!-- Title for the page -->
-
-        <!-- Sort buttons -->
-        <div class="controls">
-            <button type="button" class="control" data-filter=".all">All</button>
-            <button type="button" class="control" data-filter=".gluten-free">Gluten-Free</button>
-            <button type="button" class="control" data-filter=".dairy-free">Dairy-Free</button>
-        </div>
-
-        <!-- 6 dishes and descriptions -->
-        <div>
-            <div class="mix dairy-free"></div>
-                <img src="images/ghraybeh.jpg" alt="A plate of small circular ghraybeh cookies toped with pistachios, served on a blue ceramic plate.">
+        <div class="recipe_container ghraybeh">
+            <div class="recipes image">
+                <div class="recipes_inner">
+                    <img src="images/ghraybeh.jpg" alt="A plate of small circular ghraybeh cookies toped with pistachios, served on a blue ceramic plate.">
+                </div>
             </div>
-            <div class="mix dairy-free">
-                <h2>Ghraybeh</h2>
-                <h3>غريبة</h3>
+            <div class="recipes text">
+                <div class="recipes_inner">
+                    <h2>Ghraybeh</h2>
+                    <h3>غريبة</h3>
                     <p>Ghraybeh &#40;the Arabic word for <i>swooning</i>&#41; are Palestinian shortbread cookies consisting of three simple ingredients: Ghee, flour, and powdered sugar -- optionally flavored with orange blossom water, pistachios, and/or almonds. These cookies are traditionally made during religious holidays such as Ramadan, Eid, Christmas, or Easter. These cookies are simply one of the easiest dishes to make, and was one of the first dessert recipes I learned as a child.</p>
-            </div>
-
-            <div>
-                <img src="images/harisa.jpg" alt="A circular baking dish of harisa cut in an intricate diamond pieces, topped with almond silvers and pistachio.">
-            </div>
-            <div>
-                <h2>Harisa</h2>
-                <h3>حريصة</h3>
-                    <p>Also referred to as <i>basbousa</i> or <i>namoura</i> depending on the region. Not to mistaken for the North African spicy red sauce, Palestinian Harisa is a sweet rose-water syrup soaked semonlina cake often topped with almond slivers. It is typically served in small diamond or square-shaped servings. Regional variations include the addition of shaved coconut or orange blossom. This dish comes together in one bowl/pan and is perfect for parties. The semonlina offers up a unique soft and crumbly texture that soaks up the syrup flavors perfectly. </p>
-            </div>
-
-            <div>
-                <img src="images/knafeh.jpg" alt="A circular piece of knafeh nabulsiyeh topped with pistachio crumbles and dried rose petals, served on a white plate.">
-            </div>
-            <div>
-                <h2>Knafeh Nabulsiyeh</h2>
-                <3>كنافة نابلسية</h3>
-                    <p>The renowned dessert of my hometown Nablus, Knafeh Nabulsiyeh. Notable for its distinct bright orange color, this dish consists of Nabulsi cheese &#40;mild, white, stretchy cheese&#41; and shredded wheat drenched in a orange blossom sugar syrup and topped with crushed pistachios. One of the fondest memories of my childhood is sharing a tray of Knafeh with my family in Amman, the children fighting for the biggest, most syrupy piece! Knafeh is the center of many heated debates: Is it pronounced knafeh, or chnafeh &#40;definitely the former, but don't tell any country folk I said that!&#41;? The pride of my hometown, Knafeh, to me, symbolizes just how much food fuels the soul -- connecting us to others across all difference.</p>
-            </div>
-
-            <div class="mix dairy-free">
-                <img src="images/maamoul.jpg" alt="Gray dish piled high with circular date filled ma'amoul decorated in intricate ribbed patters, dusted with powdered sugar.">
-            </div>
-            <div class="mix dairy-free">
-                <h2>Ma'amoul</h2>
-                <h3>معمول</h3>
-                    <p>Ma'amoul is a cookie made from semolina flour, stuffed with a variety of fillings such as date paste, pastachios, or walnuts. These cookies are most commonly made in preparation for Eid, to be served with Arabic coffee to guests. They are known for their distinctive shapes and intricate designs, traditionally achieved using special wooden molds called <i>tabe</i>. It is typical to hear a hearty <b>whack</b> come from the kitchen as the cookies are released from their molds. These cookies require a lot of patience and love, because they can take anywhere from 8 hours to 3 days to make! I can assure you it is well worth the wait.</p>
-            </div>
-
-            <div>
-                <img src="images/qatayef.jpg" alt="Fried qatayef organized on a silver platter on top of a red tablecloth with traditional blue patterns.">
-            </div>
-            <div>
-                <h2>Qatayef</h2>
-                <h3>قطايف</h3>
-                    <p>Qatayef is a staple dessert for Palestinians during the holy month of Ramadan. These fried pancakes are most commonly stuffed with cheese, walnuts, or ashta &#40;a sweet cream&#41;. I consider them like the Middle East's version of a sweet dumpling. They have a deliciously crunchy exterior and often a soft luxurious interior, making it the perfect decadant treat to celebrate a successful fast. It is my dad's favorite dessert, my mom has to beg him to stop making them because he'll never stop!</p>
-            </div>
-
-            <div class="mix gluten-free">
-                <img src="images/sahlab.jpg" alt="Two glasses of sahlab topped with coconut, pistachio, and cinnamon on a traditional Middle Eastern metal serving tray.">
-            </div>
-            <div class="mix gluten-free">
-                <h2>Sahlab</h2>
-                <h3>سحلب</h3>
-                    <p>Sahlab is Middle Eastern milk pudding, made by simmering a mixture of milk, sugar, and cornstarch on the stove until thick, For flavoring my dad and I prefer a mixture of rose and orange blossom water, topping our servings with cinnamon and shaved coconut. It is the perfect pick-me-up on a cold winter night. One of the most salient memories of my childhood is walking the cold streets of Amman in December 2009 when my father, cousin, and I stopped by a sahleb vendor. The old man was kind and offered me an extra large portion, giving me a toothy smile as I took a big gulp. This drink reminds me of my people's kindness and hospitality.</p>
+                </div>
             </div>
         </div>
 
+        <div class="recipe_container harisa">
+            <div class="recipes image">
+                <div class="recipes_inner">
+                    <img src="images/harisa.jpg" alt="A circular baking dish of harisa cut in an intricate diamond pieces, topped with almond silvers and pistachio.">
+                </div>
+            </div>
+            <div class="recipes text">
+                <div class="recipes_inner">
+                    <h2>Harisa</h2>
+                    <h3>حريصة</h3>
+                    <p>Also referred to as <i>basbousa</i> or <i>namoura</i> depending on the region. Not to mistaken for the North African spicy red sauce, Palestinian Harisa is a sweet rose-water syrup soaked semonlina cake often topped with almond slivers. It is typically served in small diamond or square-shaped servings. Regional variations include the addition of shaved coconut or orange blossom. This dish comes together in one bowl/pan and is perfect for parties. The semonlina offers up a unique soft and crumbly texture that soaks up the syrup flavors perfectly. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipe_container knafeh">
+            <div class="recipes image">
+                <div class="recipes_inner">
+                    <img src="images/knafeh.jpg" alt="A circular piece of knafeh nabulsiyeh topped with pistachio crumbles and dried rose petals, served on a white plate.">
+                </div>
+            </div>
+            <div class="recipes text">
+                <div class="recipes_inner">
+                    <h2>Knafeh Nabulsiyeh</h2>
+                    <h3>كنافة نابلسية</h3>
+                    <p>The renowned dessert of my hometown Nablus, Knafeh Nabulsiyeh. Notable for its distinct bright orange color, this dish consists of Nabulsi cheese &#40;mild, white, stretchy cheese&#41; and shredded wheat drenched in a orange blossom sugar syrup and topped with crushed pistachios. One of the fondest memories of my childhood is sharing a tray of Knafeh with my family in Amman, the children fighting for the biggest, most syrupy piece! Knafeh is the center of many heated debates: Is it pronounced knafeh, or chnafeh &#40;definitely the former, but don't tell any country folk I said that!&#41;? The pride of my hometown, Knafeh, to me, symbolizes just how much food fuels the soul -- connecting us to others across all difference.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipe_container maamoul">
+            <div class="recipes image">
+                <div class="recipes_inner">
+                    <img src="images/maamoul.jpg" alt="Gray dish piled high with circular date filled ma'amoul decorated in intricate ribbed patters, dusted with powdered sugar.">
+                </div>
+            </div>
+            <div class="recipes text">
+                <div class="recipes_inner">
+                    <h2>Ma'amoul</h2>
+                    <h3>معمول</h3>
+                    <p>Ma'amoul is a cookie made from semolina flour, stuffed with a variety of fillings such as date paste, pastachios, or walnuts. These cookies are most commonly made in preparation for Eid, to be served with Arabic coffee to guests. They are known for their distinctive shapes and intricate designs, traditionally achieved using special wooden molds called <i>tabe</i>. It is typical to hear a hearty <b>whack</b> come from the kitchen as the cookies are released from their molds. These cookies require a lot of patience and love, because they can take anywhere from 8 hours to 3 days to make! I can assure you it is well worth the wait.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipe_container qatayef">
+            <div class="recipes image">
+                <div class="recipes_inner">
+                    <img src="images/qatayef.jpg" alt="Fried qatayef organized on a silver platter on top of a red tablecloth with traditional blue patterns.">
+                </div>
+            </div>
+            <div class="recipes text">
+                <div class="recipes_inner">
+                    <h2>Qatayef</h2>
+                    <h3>قطايف</h3>
+                    <p>Qatayef is a staple dessert for Palestinians during the holy month of Ramadan. These fried pancakes are most commonly stuffed with cheese, walnuts, or ashta &#40;a sweet cream&#41;. I consider them like the Middle East's version of a sweet dumpling. They have a deliciously crunchy exterior and often a soft luxurious interior, making it the perfect decadant treat to celebrate a successful fast. It is my dad's favorite dessert, my mom has to beg him to stop making them because he'll never stop!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipe_container sahlab">
+            <div class="recipes image">
+                <div class="recipes_inner">
+                    <img src="images/sahlab.jpg" alt="Two glasses of sahlab topped with coconut, pistachio, and cinnamon on a traditional Middle Eastern metal serving tray.">
+                </div>
+            </div>
+            <div class="recipes text">
+                <div class="recipes_inner">
+                    <h2>Sahlab</h2>
+                    <h3>سحلب</h3>
+                    <p>Sahlab is Middle Eastern milk pudding, made by simmering a mixture of milk, sugar, and cornstarch on the stove until thick, For flavoring my dad and I prefer a mixture of rose and orange blossom water, topping our servings with cinnamon and shaved coconut. It is the perfect pick-me-up on a cold winter night. One of the most salient memories of my childhood is walking the cold streets of Amman in December 2009 when my father, cousin, and I stopped by a sahleb vendor. The old man was kind and offered me an extra large portion, giving me a toothy smile as I took a big gulp. This drink reminds me of my people's kindness and hospitality.</p>
+                </div>
+            </div>
+        </div>
     </main>
     
 </body>
