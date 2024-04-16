@@ -1,22 +1,112 @@
 /* Mobile first design */
-body{background-image: url('/nnnoise.svg')}
-    .recipes{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .recipe{
-        width: 80vw;
-        line-height: 2;
-        height: 80vw
-    }
+body{
+    background-image: url('/nnnoise.svg');
+    font-family: "Zeyada", cursive;
+    background-color: #ebf4e9;
+}
+.recipes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.recipe{
+    width: 80vw;
+    line-height: 2;
+    height: 80vw
+}
+
+.skip-to-main {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    transition: 1s ease-out;
+    border-radius: 15px;
+    background-color: #aeb7aa;
+}
+
+.skip-to-main:focus {
+    position: absolute;
+    top: 10px;
+    border: 3px solid white;
+}
+
+header p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 350%;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 5%;
+    line-height: 100%;
+}
+
+.subtitle {
+    font-size: 100%;
+    font-style: italic;
+    padding: 0;
+    position: relative;
+    top: -75px;
+
+}
+
+#accessibleButton {
+    position: absolute;
+    background-color: #aeb7aa;
+    border: 1px solid black;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+
+}
+
+li{
+    list-style: none;
+}
+
+#feature-card {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    z-index: 1;
+    background-color: #92ba98;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 50px;
+    color: black;
+    /* font-family: "Zeyada", cursive; */
+}
 
 /* responsive design for tablet viewport */
 @media screen and (min-width: 800px) {
-    div.controls{
-        grid-column: 1 / -1;
+    .nav-item {
+        background-color: #92ba98;
+        padding: 15px;
+    }
+
+    .nav-item a {
+        color: black;
+        font-size: 24px;
+        /* font-family: "Zeyada", cursive; */
+    }
+
+    .nav-item a:hover {
+        color: white;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 150px;
+        flex-direction: row;
+        gap: 32px;
     }
 
     .grid{
