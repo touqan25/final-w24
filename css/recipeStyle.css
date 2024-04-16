@@ -73,6 +73,7 @@ li{
 #feature-card {
     position: relative;
     z-index: 1;
+    text-align: center;
     /* background-color: #92ba98; */
     font-size: 48px;
     font-weight: bold;
