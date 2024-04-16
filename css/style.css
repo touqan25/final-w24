@@ -212,7 +212,7 @@
   
   
   /* responsive design for tablet viewport */
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 800px) {
       .nav-item {
           background-color: var(--green);
           padding: 15px;
@@ -380,7 +380,7 @@
   
   
   /* responsive design for desktop viewport */
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
       /* Design for index.html */
       .nav-item {
           background-color: var(--green);
