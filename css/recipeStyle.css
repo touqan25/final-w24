@@ -226,5 +226,17 @@ li{
         grid-template-columns: 33% 33% 33%
     }
 
+    #feature-card {
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        z-index: 1;
+        background-color: #92ba98;
+        font-size: 48px;
+        font-weight: bold;
+        padding: 25px;
+        color: black;
+    }
+
 
     }
