@@ -107,6 +107,18 @@ li{
         gap: 32px;
     }
 
+    #feature-card {
+        position: absolute;
+        top: 26%;
+        left: 5%;
+        z-index: 1;
+        background-color: #92ba98;
+        font-size: 36px;
+        font-weight: bold;
+        padding: 20px;
+        color: black;
+    }
+
     .grid{
         display: grid;
         grid-template-columns: 50% 50%;
