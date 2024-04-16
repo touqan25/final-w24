@@ -8,8 +8,14 @@
   --transparent-paper: rgba(236, 178, 186, 0);
 }
 
+a:focus {
+    outline: 3px solid black;
+
+}
+
 body {
-    background: #ebf4e9
+    background: #ebf4e9;
+    font-family: "Zeyada", cursive;
 }
 
 .skip-to-main {
@@ -49,6 +55,20 @@ header p {
 
 }
 
+#accessibleButton {
+    position: absolute;
+    background-color: #aeb7aa;
+    border: 1px solid black;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+
+}
+
 
 /* responsive design for tablet viewport */
 @media screen and (min-width: 768px) {
@@ -67,7 +87,7 @@ header p {
     .nav-item a {
         color: black;
         font-size: 24px;
-        font-family: "Zeyada", cursive;
+        /* font-family: "Zeyada", cursive; */
     }
 
     .nav-item a:hover {
@@ -82,6 +102,8 @@ header p {
         gap: 32px;
     }
 
+/* all card and tape code inspired by this https://codepen.io/aitchiss/pen/QWKmPqx codepen */
+
     #feature-card {
         position: absolute;
         top: 30%;
@@ -92,7 +114,7 @@ header p {
         font-weight: bold;
         padding: 50px;
         color: black;
-        font-family: "Zeyada", cursive;
+        /* font-family: "Zeyada", cursive; */
     }
 
     .tape-section {
@@ -194,7 +216,7 @@ header p {
     }
 
     /* Hover effect */
-    .latest-recipes-container img:hover {
+    .latest-recipes-container img:hover, .latest-recipes-container img:focus {
         filter: sepia(0%);
     }
 
@@ -237,7 +259,7 @@ header p {
         font-size: 32px;
         padding: 30px;
         color: black;
-        font-family: "Zeyada", cursive;
+        /* font-family: "Zeyada", cursive; */
     }
 
     .paper {
@@ -401,7 +423,7 @@ header p {
         font-weight: bold;
         color: black;
         text-align: center;
-        font-family: "Zeyada", cursive;
+        /* font-family: "Zeyada", cursive; */
         margin: 20px 0;
     }
 }
