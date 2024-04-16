@@ -42,16 +42,15 @@ header p {
     font-size: 350%;
     font-variant: small-caps;
     text-align: center;
-    padding: 5%;
+    padding-top: 5%;
     line-height: 100%;
 }
 
 .subtitle {
     font-size: 100%;
     font-style: italic;
-    padding: 0;
+    padding: 1%;
     position: relative;
-    top: -75px;
 
 }
 

@@ -40,16 +40,15 @@ header p {
     font-size: 350%;
     font-variant: small-caps;
     text-align: center;
-    padding: 5%;
+    padding-top: 5%;
     line-height: 100%;
 }
 
 .subtitle {
     font-size: 100%;
     font-style: italic;
-    padding: 0;
+    padding: 1%;
     position: relative;
-    top: -15px;
 
 }
 
@@ -74,7 +73,6 @@ li{
 #feature-card {
     position: relative;
     z-index: 1;
-    text-align: center;
     /* background-color: #92ba98; */
     font-size: 48px;
     font-weight: bold;
@@ -102,7 +100,7 @@ li{
 
     .nav-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         margin: 20px 150px;
         flex-direction: row;
         gap: 32px;
