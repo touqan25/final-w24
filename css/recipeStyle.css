@@ -1,0 +1,142 @@
+/* Mobile first design */
+body{background-image: url('/nnnoise.svg')}
+    .recipes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .recipe{
+        width: 80vw;
+        line-height: 2;
+        height: 80vw
+    }
+
+/* responsive design for tablet viewport */
+@media screen and (min-width: 800px) {
+    div.controls{
+        grid-column: 1 / -1;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recipeImg{
+        width: 50vw;
+        height: 50vw;
+    
+    }
+    .recipes_inner{
+        position: relative;
+        height: auto;
+        width: 100%;
+        display: inline-block;
+        justify-content: center;
+        padding: 20px;
+        z-index: 1;
+    }
+    
+    .recipes_inner > img{
+        object-fit: cover;
+        /* width:45vw;
+        height: 45vw; */
+        border-radius: 20px;
+        height: 350px;
+        width: 250px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        border: solid 2px rgba(0,0,0,0.2);
+    }
+
+    .recipe_container {
+        grid-row: auto;
+        grid-column: auto;
+        margin-top: 80px;
+        position: relative; /* Ensure relative positioning */
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .recipes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px rgb(0 0 0 / 40%), inset 0px 0px 25px rgb(0 0 0 / 30%);
+        position: absolute;
+        width: 250px;
+        height: 350px;
+        transition: all 400ms ease;
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(252, 252, 252, 0.92);
+    }
+
+    .recipes:hover:not(.active).right, .recipes:focus:not(.active).right {
+        transform: translateX(45%) rotate(3deg) scale(0.9);
+    }
+    
+    .recipes.active:hover, .recipes.active:focus {
+        transform: translateX(-20%) scale(1.1);
+    }
+
+    .recipes.right {
+        transform: translateX(45%) scale(0.9);
+    }
+    .recipes.text{
+        align-items: unset;
+    }
+    
+    .recipes.text h3,
+    .recipes.text p {
+        margin: 0 0 0 0; /* Reset margin to avoid unwanted space */
+        padding: 10px; /* Add padding to create space within the container */
+        box-sizing: border-box; /* Include padding in element's total width/height */
+    }
+
+    .recipes.text h2{
+        margin-top: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .recipes.right.text{
+        overflow: hidden;
+    }
+    
+    .recipes:not(.right).text{
+        overflow: auto;
+    }
+
+    .recipes.active {
+        transform: translateX(-20%);
+    }
+    
+    .recipes.active {
+        z-index: 5;
+        position: relative;
+    }
+    .recipes.text {
+        overflow-y: auto; /* Enable vertical scrolling */
+        box-sizing: border-box;
+        max-height: fit-content;
+    }
+}
+
+/* responsive design for desktop viewport */
+@media screen and (min-width: 1200px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 33% 33% 33%
+    }
+
+
+    }
