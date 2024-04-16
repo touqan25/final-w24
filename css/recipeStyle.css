@@ -49,7 +49,7 @@ header p {
     font-style: italic;
     padding: 0;
     position: relative;
-    top: -75px;
+    top: -15px;
 
 }
 
@@ -72,11 +72,10 @@ li{
 }
 
 #feature-card {
-    position: absolute;
-    top: 30%;
-    left: 2%;
+    position: relative;
     z-index: 1;
-    background-color: #92ba98;
+    text-align: center;
+    /* background-color: #92ba98; */
     font-size: 48px;
     font-weight: bold;
     padding: 50px;
@@ -103,7 +102,7 @@ li{
 
     .nav-container {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         margin: 20px 150px;
         flex-direction: row;
         gap: 32px;
