@@ -2,7 +2,7 @@
 body{
     background-image: url('/nnnoise.svg');
     font-family: "Zeyada", cursive;
-    background-color: #ebf4e9;
+/*     background-color: #ebf4e9; */
 }
 .recipes{
     display: flex;
