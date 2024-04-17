@@ -1,4 +1,39 @@
 /* Mobile first design */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 50px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-item {
+    background-color: #92ba98;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-item a {
+    color: black;
+    font-size: 24px;
+    /* font-family: "Zeyada", cursive; */
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+#feature-card {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    /* background-color: #92ba98; */
+    font-size: 48px;
+    font-weight: bold;
+    padding: 50px;
+    color: black;
+    /* font-family: "Zeyada", cursive; */
+}
 body{
     background-image: url('../nnnoise.svg');
     font-family: "Zeyada", cursive;
@@ -74,7 +109,7 @@ li{
     position: relative;
     z-index: 1;
     text-align: center;
-    /* background-color: #92ba98; */
+    background-color: #92ba98;
     font-size: 48px;
     font-weight: bold;
     padding: 50px;
@@ -109,7 +144,7 @@ li{
 
     #feature-card {
         position: absolute;
-        top: 26%;
+        top: 30%;
         left: 5%;
         z-index: 1;
         background-color: #92ba98;
@@ -240,7 +275,7 @@ li{
 
     #feature-card {
         position: absolute;
-        top: 25%;
+        top: 30%;
         left: 5%;
         z-index: 1;
         background-color: #92ba98;
