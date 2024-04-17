@@ -50,6 +50,31 @@ body{
     line-height: 2;
     height: 80vw
 }
+.recipes_inner > img {
+    object-fit: cover;
+    width: 80vw;
+    border-radius: 15px;
+    margin: 10px
+
+
+}
+
+.text{
+    background-color: rgba(252, 252, 252, 0.92);
+    width: 80vw;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 10%;
+}
+
+.recipes_inner > p, h2, h3{
+    margin: 5%
+} 
+
+h2{
+    text-decoration: underline;
+    font-size: large;
+}
 
 .skip-to-main {
     position: absolute;
