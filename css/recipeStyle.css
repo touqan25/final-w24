@@ -23,6 +23,9 @@
     color: white;
 }
 
+.selected{
+    font-weight: bold
+
 #feature-card {
     position: relative;
     z-index: 1;
