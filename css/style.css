@@ -66,7 +66,10 @@
       font-family: 'Georgia', 'Times New Roman', Times, serif;
   
   }
-  
+  .selected{
+    font-weight: 900
+  }
+
   .nav-item {
           background-color: var(--green);
           padding: 15px;
